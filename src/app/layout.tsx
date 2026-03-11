@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import ConditionalFooter from "@/components/ConditionalFooter";
 import { ViewTransitions } from "next-view-transitions";
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -34,7 +34,7 @@ export default function RootLayout({
         <body className="min-h-screen flex flex-col bg-black text-white">
           <Navbar />
           <main className="flex-1">{children}</main>
-          <Footer />
+          <ConditionalFooter />
         </body>
       </html>
     </ViewTransitions>
