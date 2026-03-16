@@ -5,7 +5,7 @@ import { FiCopy, FiCheck, FiMail, FiDownload } from "react-icons/fi";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import RevealOnce from "@/components/RevealOnce";
 
-export default function ContactPage() {
+export default function ContactSection() {
   const email = "Myriamchmkh@gmail.com";
   const github = "https://github.com/mchamakh";
   const linkedin = "https://www.linkedin.com/in/myriam-chamakh-1a217a302/";

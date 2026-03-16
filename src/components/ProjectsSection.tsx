@@ -1,7 +1,7 @@
 import Reveal from "@/components/Reveal";
 import RevealOnce from "@/components/RevealOnce";
 
-export default function ProjectsPage() {
+export default function ProjectsSection() {
   return (
     <section
       id="projets"

@@ -4,7 +4,7 @@ import RevealOnce2 from "@/components/RevealOnce2";
 const Strong = ({ children }: { children: React.ReactNode }) => (
   <strong className="clash font-semibold text-white">{children}</strong>
 );
-export default function AboutPage() {
+export default function AboutSection() {
   return (
     <section id="apropos" className="px-4 pb-24 pt-24 scroll-mt-28">
       <div className="mx-auto max-w-5xl">
