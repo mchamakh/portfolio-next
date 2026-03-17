@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ConditionalFooter from "@/components/ConditionalFooter";
 import { ViewTransitions } from "next-view-transitions";
+
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "Portfolio développeuse web",

@@ -37,7 +37,7 @@ export default function Navbar() {
   return (
     <>
       {/* DESKTOP */}
-      <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 hidden sm:block">
+      <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 hidden md:block">
         <div className="px-4 py-2 rounded-full hover:bg-white/8 transition">
           <nav className="clash font-semibold flex items-center gap-2 text-sm text-white/80">
             {links.map((l) => {
@@ -61,39 +61,6 @@ export default function Navbar() {
           </nav>
         </div>
       </header>
-
-      {/* MOBILE — bouton burger */}
-      <button
-        onClick={() => setOpen((v) => !v)}
-        className="fixed top-5 right-5 z-50 sm:hidden p-2 rounded-full bg-white/10 backdrop-blur border border-white/20 text-white"
-        aria-label="Menu"
-      >
-        {open ? <HiX size={20} /> : <HiMenu size={20} />}
-      </button>
-
-      {/* MOBILE — menu overlay */}
-      {open && (
-        <div className="fixed inset-0 z-40 bg-black/90 backdrop-blur-xl flex flex-col items-center justify-center gap-8 sm:hidden">
-          {links.map((l) => {
-            const isActive = active === l.href.replace("#", "");
-            return (
-              <a
-                key={l.href}
-                href={l.href}
-                onClick={() => setOpen(false)}
-                className={[
-                  "clash text-3xl font-semibold transition",
-                  isActive
-                    ? "text-[#c0feff]"
-                    : "text-white/70 hover:text-white",
-                ].join(" ")}
-              >
-                {l.label}
-              </a>
-            );
-          })}
-        </div>
-      )}
     </>
   );
 }
