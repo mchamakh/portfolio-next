@@ -3,7 +3,7 @@ export default function HomeSection() {
   return (
     <section
       id="home"
-      className="min-h-screen bg-zinc-950 bg-cover bg-center bg-no-repeat bg-fixed"
+      className="min-h-screen bg-zinc-950 bg-cover bg-center bg-no-repeat bg-scroll"
       style={{ backgroundImage: "url('/gradient.png')" }}
     >
       <div className="min-h-screen bg-black/40 flex items-center justify-center px-4">
